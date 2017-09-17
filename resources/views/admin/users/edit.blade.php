@@ -10,7 +10,7 @@
 
     <div class="col-sm-9">
 
-		{!! Form::model($user, ['action' => ['AdminUsersController@update', $user->id], 'method' => 'patch', 'files' => true]) !!}
+		{!! Form::model($user, ['action' => ['AdminUsersController@update', $user->id], 'method' => 'patch', 'files' => true, 'class' => 'inline-block']) !!}
 
 		  <div class="form-group">
 
@@ -68,11 +68,21 @@
 
 		  <div class="form-group">
 
-		  {!! Form::submit('Create User', ['class' => 'btn btn-primary']) !!}
+		  {!! Form::submit('Save Changes', ['class' => 'btn btn-primary col-sm-6']) !!}
 
 		  </div>
 
 	  	{!! Form::close() !!}
+
+		{!! Form::open((['action' => ['AdminUsersController@destroy', $user->id], 'method' => 'delete'])) !!}
+
+			<div class="form-group">
+
+				{!! Form::submit('Delete User', ['class' => 'btn btn-danger col-sm-6']) !!}
+
+			</div>
+
+	  	{!! Form::close() !!}	
 
         @include('partials.form_errors')
 

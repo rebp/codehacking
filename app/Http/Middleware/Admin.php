@@ -3,6 +3,10 @@
 namespace App\Http\Middleware;
 
 use Closure;
+/**
+ * The Auth class needs to be imported everytime when using the Authentication middleware
+ */
+use Illuminate\Support\Facades\Auth;
 
 class Admin
 {
@@ -15,6 +19,14 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+
+        if(Auth::check()) {
+            if(Auth::user()->isAdmin()) {
+                return $next($request);
+            }
+        }
+
+        return redirect('/');
+        
     }
 }

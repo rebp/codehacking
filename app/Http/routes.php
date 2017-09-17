@@ -23,4 +23,20 @@ Route::get('/admin', function(){
 	return view('admin.index');
 });
 
-Route::resource('admin/users', 'AdminUsersController');
+
+
+/**  
+ *  1. Create Middleware
+ *  2. Add middleware into the kernel
+ *  3. Make group route and insert the coresponding middleware route
+ */
+Route::group(['middleware' => 'admin'], function() {
+
+    Route::resource('admin/users', 'AdminUsersController');
+
+    Route::resource('admin/posts', 'AdminPostsController');
+
+});
+
+
+
