@@ -161,9 +161,6 @@ class AdminUsersController extends Controller
         Session::flash('deleted_user', 'User ' . $user->name . ' has been successfully deleted.');        
     
         return redirect("/admin/users");
-
-        return $user;
-
         
     }
 }

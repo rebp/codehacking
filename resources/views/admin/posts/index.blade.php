@@ -3,6 +3,18 @@
 
 @section('content')
 
+    @if(Session::has('deleted_post'))
+        <p class="bg-danger">{{ session('deleted_post') }}</p>
+    @endif
+
+    @if(Session::has('updated_post'))
+        <p class="bg-success">{{ session('updated_post') }}</p>
+    @endif
+
+    @if(Session::has('created_post'))
+        <p class="bg-success">{{ session('created_post') }}</p>
+    @endif
+
     <h1>Posts</h1>
 
     <table class="table">
@@ -25,7 +37,7 @@
             <tr>
                 <th>{{ $post->id }}</th>
                 <td><img height="100" src="{{ $post->photo ? $post->photo->file : 'http://via.placeholder.com/100x100'}}" class="img-rounded" alt=""></td>
-                <td>{{ $post->user->name }}</td>
+                <td><a href="{{ route('admin.posts.edit', $post->id) }}">{{ $post->user->name }}</a></td>
                 <td>{{ $post->category ? $post->category->name : 'Uncategorized' }}</td>
                 <td>{{ $post->title }}</td>
                 <td>{{ $post->body }}</td>
