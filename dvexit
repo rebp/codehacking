@@ -1,0 +1,41 @@
+[33mcommit 2d6bd72f33417a9d4d0267682ec73ea6f6be8d4d[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Sun Sep 17 20:04:15 2017 +0200
+
+    admin posts page added and working
+
+[33mcommit 7ffed37377ea05edcebf73f0d95ff46544fe4105[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Sat Sep 16 16:27:04 2017 +0200
+
+    users section working 100 percent - except security
+
+[33mcommit 9877e2a2dc0b7a91a116cadea7d1a9d9a95008cc[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Fri Sep 15 17:39:27 2017 +0200
+
+    create users with photos feature working
+
+[33mcommit af8c8bf2bfee4472d31d10c24c6da5a753978a30[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Fri Sep 15 16:32:29 2017 +0200
+
+    users page working without photos
+
+[33mcommit bb17b8185cf9e2120bfec013167d322ce3602736[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Mon Sep 11 22:40:04 2017 +0200
+
+    added admin master page setup
+
+[33mcommit 0ea0ed40a78f107acbfcdf12c4f4f043837b586f[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Mon Sep 11 22:12:22 2017 +0200
+
+    assets added and gulp installed
+
+[33mcommit 7a8cda9e9f0e097dea7ea94b708c7347895d80a6[m
+Author: Rober Eduardo Bautista Prieto <r.e.bautista.prieto@hotmail.com>
+Date:   Mon Sep 11 20:43:09 2017 +0200
+
+    First commit - admin views created
