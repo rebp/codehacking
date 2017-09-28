@@ -23,12 +23,12 @@
         <hr>
 
         <!-- Preview Image -->
-        <img src="{{ $post->photo ? $post->photo->file : 'http://via.placeholder.com/900x300'}}" class="img-rounded img-responsive" alt="">
+        <img src="{{ $post->photo ? $post->photo->file : null }}" class="img-rounded img-responsive" alt="">
 
         <hr>
 
         <!-- Post Content -->
-        <p>{{ $post->body }}</p>
+        <p>{!! $post->body !!}</p>
 
         <hr>
 
